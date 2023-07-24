@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": ".",
+            "name": "Oculus Dash Customizer"
+		}
+    ],
+    "settings": {
+        "terminal.integrated.fontFamily": "Consolas",
+        "terminal.integrated.fontWeight": "500"
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Python: Launch ODC",
+                "type": "python",
+                "request": "launch",
+                "program": "${workspaceFolder}/src/main.py",
+                "cwd": "${workspaceFolder}/src",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            }
+        ],
+        "compounds": []
+    }
+}
