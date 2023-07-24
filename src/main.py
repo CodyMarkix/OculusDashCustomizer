@@ -132,7 +132,7 @@ def isCorrectSize(img: Image.Image):
 
 def main():
     # Verify the user has perms
-    if True:
+    if checkPerms():
         # Set the icon and title for the main program
         icon = tkinter.PhotoImage(file=os.path.abspath(".\\assets\\ico\\icon.png"));
         tk.iconphoto(False, icon)
