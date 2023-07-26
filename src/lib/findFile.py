@@ -16,6 +16,13 @@ def findFile(textField: tkinter.Entry, fileFormats: tuple, fileTypeReq: str = "g
     match fileTypeReq: # Can add more prompts later down the line
         case "texture":
             prompt = "Pick a texture"
+        case "image":
+            prompt = "Pick an image"
+        case "generic":
+            prompt = "Pick a file"
+        case _:
+            prompt = "Pick a file"
+        
 
     path = tkinter.filedialog.askopenfilename(initialdir=os.getcwd(), title=prompt, filetypes=fileFormats).replace('/', '\\')
     
